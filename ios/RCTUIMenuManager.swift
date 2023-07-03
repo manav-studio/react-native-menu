@@ -9,11 +9,12 @@ class RCTUIMenuManager: RCTViewManager {
     }
     
     override func view() -> UIView! {
-        if #available(iOS 14.0, *) {    
-            return MenuView();
-        } else {
-            return ActionSheetView();
-        }
+          return ActionSheetView();
+        // if #available(iOS 14.0, *) {    
+        //     return MenuView();
+        // } else {
+        //     return ActionSheetView();
+        // }
     }
 }
 
